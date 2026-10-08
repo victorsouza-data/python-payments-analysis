@@ -89,3 +89,22 @@ approved = (df["status"] == "Aprovado").sum()
 approval_rate = (approved / len(df)) * 100
 
 print(f"Taxa de aprovação: {approval_rate:.2f}%")
+
+# ==========================================
+# GRÁFICO - PAGAMENTOS POR STATUS
+# ==========================================
+
+import matplotlib.pyplot as plt
+
+status_analysis["quantidade"].plot(
+    kind="bar",
+    title="Quantidade de Pagamentos por Status"
+)
+
+plt.xlabel("Status")
+plt.ylabel("Quantidade")
+plt.tight_layout()
+
+plt.savefig("payments_by_status.png")
+
+plt.show()
