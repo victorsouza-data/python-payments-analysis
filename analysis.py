@@ -125,3 +125,21 @@ plt.tight_layout()
 plt.savefig("payments_by_method.png")
 
 plt.show()
+
+# ==========================================
+# GRÁFICO - EVOLUÇÃO MENSAL
+# ==========================================
+
+monthly_analysis["valor_total"].plot(
+    kind="line",
+    marker="o",
+    title="Evolução do Valor de Pagamentos por Mês"
+)
+
+plt.xlabel("Mês")
+plt.ylabel("Valor (R$)")
+plt.tight_layout()
+
+plt.savefig("payments_monthly.png")
+
+plt.show()
