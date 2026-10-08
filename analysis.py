@@ -108,3 +108,20 @@ plt.tight_layout()
 plt.savefig("payments_by_status.png")
 
 plt.show()
+
+# ==========================================
+# GRÁFICO - PAGAMENTOS POR MÉTODO
+# ==========================================
+
+method_analysis["valor_total"].plot(
+    kind="bar",
+    title="Valor Total por Método de Pagamento"
+)
+
+plt.xlabel("Método de Pagamento")
+plt.ylabel("Valor (R$)")
+plt.tight_layout()
+
+plt.savefig("payments_by_method.png")
+
+plt.show()
