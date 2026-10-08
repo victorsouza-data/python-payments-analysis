@@ -1,0 +1,17 @@
+payment_id,customer_id,payment_date,amount,payment_method,status
+1,1,2026-01-05,450.00,PIX,Aprovado
+2,2,2026-01-07,780.50,Cartão,Aprovado
+3,3,2026-01-10,320.00,Boleto,Pendente
+4,4,2026-01-12,1250.00,PIX,Aprovado
+5,5,2026-01-15,560.00,Cartão,Recusado
+6,6,2026-01-18,920.00,PIX,Aprovado
+7,7,2026-01-20,300.00,Boleto,Pendente
+8,8,2026-01-22,1500.00,Cartão,Aprovado
+9,1,2026-02-03,670.00,PIX,Aprovado
+10,2,2026-02-08,890.00,Cartão,Aprovado
+11,3,2026-02-11,430.00,PIX,Recusado
+12,4,2026-02-14,1100.00,Boleto,Aprovado
+13,5,2026-02-17,720.00,PIX,Aprovado
+14,6,2026-02-20,980.00,Cartão,Pendente
+15,7,2026-02-22,610.00,PIX,Aprovado
+16,8,2026-02-25,1350.00,Cartão,Aprovado
