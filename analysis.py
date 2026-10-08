@@ -138,6 +138,23 @@ monthly_analysis["valor_total"].plot(
 
 plt.xlabel("Mês")
 plt.ylabel("Valor (R$)")
+
+# ==========================================
+# GRÁFICO - TOP CLIENTES
+# ==========================================
+
+customer_analysis.head(5)["valor_total"].plot(
+    kind="bar",
+    title="Top 5 Clientes por Valor de Pagamentos"
+)
+
+plt.xlabel("Cliente")
+plt.ylabel("Valor (R$)")
+plt.tight_layout()
+
+plt.savefig("top_customers.png")
+
+plt.show()
 plt.tight_layout()
 
 plt.savefig("payments_monthly.png")
